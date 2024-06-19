@@ -151,4 +151,30 @@
     border-radius: 20px;
     font-size: 0.9em;
   }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .action-button {
+    background-color: #007bff; /* Blue color for the button */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button size */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    margin: 0 10px; /* Margin between buttons */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .action-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .action-button:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Focus shadow */
+  }
   
