@@ -36,10 +36,10 @@ Features:
 - **Download and Print**: Download the resume in various formats (PDF, DOCX) for easy sharing and application.
 
 INSTALLATION:
-1)To get started with contributing to our project, fork the repository at-https://github.com/PatilHarshh/Kaam-Do to your account.
+1)To get started with contributing to our project, fork the repository at-https://github.com/aryapandeyy22/Personal-project.git to your account.
 
 2)Then Clone the repository by running this command in your local machine.
-->git clone https://github.com/your-username/kaam-do.git
+->git clone  https://github.com/aryapandeyy22/Personal-project.git
 
 3)Change the directory to FRONTEND, Install required Packages and run frontend server
 -> cd client
