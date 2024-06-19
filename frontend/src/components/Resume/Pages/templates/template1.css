@@ -1,0 +1,154 @@
+.templateParent {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    padding: 50px;
+  }
+  
+  .templateParent:hover {
+    transform: scale(1.02);
+  }
+  
+  .top {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  
+  h3 {
+    font-size: 1.8em;
+    margin-top: 35px;
+    border-bottom: 3px solid #0073b1;
+    padding-bottom: 7px;
+    color: #0073b1;
+  }
+  
+  p {
+    margin: 8px 0;
+    font-size: 1em;
+    color: #555;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0073b1;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .divider {
+    height: 2px;
+    background-color: #0073b1;
+    margin: 25px 0;
+  }
+  
+  
+  .education div, .experience div, .projects div, .achievements div {
+    margin-bottom: 15px;
+    font-size: 2vh;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  #hehe{
+    padding: 1vw;
+    margin-bottom: 2vh;
+  }
+  
+  .justify-content-around {
+    justify-content: space-around;
+  }
+  
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  /* Additional styles for better visual hierarchy */
+  h6 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+   
+  }
+  
+  b {
+    color: #0073b1;
+  }
+  
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .top .contact-info p {
+    margin: 0 15px;
+  }
+  
+  .top .contact-info a {
+    margin: 0 10px;
+  }
+  
+  .education div p,
+  .experience div p,
+  .projects div p,
+  .achievements div p {
+    margin: 0;
+   
+  }
+  #yoi{
+    margin-left: 15vw;
+  }
+  #bleh{
+    margin-left: 39vw;
+  }
+  
+  .experience .description,
+  .projects .description,
+  .achievements .description {
+    margin-top: 10px;
+    font-size: 10vh;
+    color: #666;
+  }
+  
+  .skills .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .skills .skill-list p {
+    background-color: #0073b1;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+  }
+  
