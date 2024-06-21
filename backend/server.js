@@ -47,8 +47,7 @@ app.use(ErrorHandler);
 
 app.get("/", (req, res) => {
   res.json("Hey");
-})
-
+}); 
 //server
 app.listen({ port: PORT }, async () => {
   console.log(`Server running on port ${PORT}`)
