@@ -10,4 +10,5 @@ router.post('/login', userController.login);
 router.get('/alluser' ,isAuthorized,userController.getUser);
 router.get('/logout', isAuthorized, userController.logout);
 
+router.put('/updatepassword', isAuthorized, userController.updatePassword);
 module.exports = router;

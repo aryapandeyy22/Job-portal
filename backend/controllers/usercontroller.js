@@ -64,10 +64,41 @@ const getUser = catchAsyncErrors((req, res, next) => {
     const user = req.user;
     res.status(200).json({ success: true, user });
 });
+const updatePassword = catchAsyncErrors(async (req, res, next) => {
+    const { currentPassword, newPassword } = req.body;
+
+    // Validate input
+    if (!currentPassword || !newPassword) {
+        return next(new ErrorHandler("Please provide both current and new password.", 400));
+    }
+
+    const user = await User.findByPk(req.user.id);
+
+    if (!user) {
+        return next(new ErrorHandler("User not found.", 404));
+    }
+
+    // Check if current password is correct
+    const isPasswordMatched = await user.validPassword(currentPassword);
+    if (!isPasswordMatched) {
+        return next(new ErrorHandler("Current password is incorrect.", 400));
+    }
+
+    // Update password
+    user.password = newPassword;
+    await user.save();
+
+    res.status(200).json({
+        success: true,
+        message: "Password updated successfully."
+    });
+});
+
 
 module.exports = {
     register,
     login,
     logout,
-    getUser
+    getUser,
+    updatePassword
 };
