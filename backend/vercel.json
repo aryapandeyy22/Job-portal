@@ -1,6 +1,6 @@
 {
     
-    "routes": [
+    "rewrites": [
       { 
       "src": "/(.*)", 
       "dest": "/"
