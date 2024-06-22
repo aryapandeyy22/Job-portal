@@ -29,7 +29,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/api/user/alluser",
+          "https://job-portal-arya-pandeys-projects-e65e96c6.vercel.app/api/user/alluser",
           {
             withCredentials: true,
           }
