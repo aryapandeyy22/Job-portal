@@ -13,12 +13,6 @@ Features:
 - **Job Search**: Job seekers can search for job listings using various criteria like keywords, location, industry, and more.
 - **Job Details Page**: Detailed view of each job listing, including job description, company information, and application instructions.
 
-### Filtering Options
-- **Keyword Search**: Search job listings by relevant keywords.
-- **Location Filter**: Filter jobs by location, including options for remote work.
-- **Industry and Category Filters**: Narrow down job listings by specific industries or job categories.
-- **Salary Range**: Filter jobs based on salary expectations.
-- **Job Type**: Filter by job type (e.g., full-time, part-time, contract, internship).
 
 ### Apply Directly
 - **One-Click Apply**: Job seekers can apply for jobs directly through the portal with a single click.
