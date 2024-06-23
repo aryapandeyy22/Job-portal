@@ -1,6 +1,6 @@
-ABOUT FoundIt:
+ABOUT :
 It is a web application designed to streamline the job searching process.It is designed to give an easy access to connect the user to the corporate.
-Whether you're a job seeker looking for your next opportunity or an employer seeking talented individuals, FoundIt provides a user-friendly interface to connect both parties efficiently. 📈
+Whether you're a job seeker looking for your next opportunity or an employer seeking talented individuals, It provides a user-friendly interface to connect both parties efficiently. 📈
 
 Features:
 ###  User Authentication
