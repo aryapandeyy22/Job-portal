@@ -25,9 +25,7 @@ Features:
 
 ### Resume Builder
 - **Template Selection**: Choose from various resume templates.
-- **Guided Creation**: Step-by-step guidance to create a professional resume.
-- **Customization**: Add and customize sections such as work experience, education, skills, and certifications.
-- **Download and Print**: Download the resume in various formats (PDF, DOCX) for easy sharing and application.
+- **Download and Print**: Download the resume in various formats (PDF, PNG) for easy sharing and application.
 
 INSTALLATION:
 1)To get started with contributing to our project, fork the repository at-https://github.com/aryapandeyy22/Personal-project.git to your account.
