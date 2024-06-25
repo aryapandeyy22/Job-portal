@@ -15,10 +15,11 @@ const Login = () => {
 
   const { isAuthorized, setIsAuthorized } = useContext(Context);
 
+  
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post(
+      const response = await axios.post(
         "http://localhost:4000/api/user/login",
         { email, password, role },
         {
@@ -28,19 +29,24 @@ const Login = () => {
           withCredentials: true,
         }
       );
-     console.log(userId);
+      const { data } = response;
+      console.log(data.userId); // Ensure 'userId' exists in the response data
       toast.success(data.message);
       setEmail("");
       setPassword("");
       setRole("");
       setIsAuthorized(true);
     } catch (error) {
-      toast.error(error.response.data.message);
+      if (error.response && error.response.data && error.response.data.message) {
+        toast.error(error.response.data.message);
+      } else {
+        toast.error("An error occurred. Please try again.");
+      }
     }
   };
 
-  if(isAuthorized){
-    return <Navigate to={'/home'}/>
+  if (isAuthorized) {
+    return <Navigate to={'/home'} />;
   }
 
   return (
