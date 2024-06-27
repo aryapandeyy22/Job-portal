@@ -30,48 +30,61 @@ const Navbar = () => {
   return (
     <nav className={isAuthorized ? "navbarShow" : "navbarHide"}>
       <div className="containerr">
-       
         <ul className={!show ? "menu" : "show-menu menu"}>
-          <li>
-            <Link to={"/home"} onClick={() => setShow(false)}>
-              HOME
-            </Link>
-          </li>
-          <li>
-            <Link to={"/job/getall"} onClick={() => setShow(false)}>
-              ALL JOBS
-            </Link>
-          </li>
-          <li>
-            <Link to={"/applications/me"} onClick={() => setShow(false)}>
-              {user && user.role === "Employer"
-                ? "APPLICANT'S APPLICATIONS"
-                : "MY APPLICATIONS"}
-            </Link>
-          </li>
-          <li>
-            <Link to={"/resume/form"} onClick={() => setShow(false)}>
-            RESUME BUILDER 
-            </Link>
-          </li>
-          {user && user.role === "Employer" ? (
+          {isAuthorized ? (
             <>
               <li>
-                <Link to={"/job/post"} onClick={() => setShow(false)}>
-                  POST NEW JOB
+                <Link to={"/home"} onClick={() => setShow(false)}>
+                  HOME
                 </Link>
               </li>
               <li>
-                <Link to={"/job/me"} onClick={() => setShow(false)}>
-                  VIEW YOUR JOBS
+                <Link to={"/job/getall"} onClick={() => setShow(false)}>
+                  ALL JOBS
+                </Link>
+              </li>
+              <li>
+                <Link to={"/applications/me"} onClick={() => setShow(false)}>
+                  {user && user.role === "Employer"
+                    ? "APPLICANT'S APPLICATIONS"
+                    : "MY APPLICATIONS"}
+                </Link>
+              </li>
+              <li>
+                <Link to={"/resume/form"} onClick={() => setShow(false)}>
+                  RESUME BUILDER
+                </Link>
+              </li>
+              {user && user.role === "Employer" ? (
+                <>
+                  <li>
+                    <Link to={"/job/post"} onClick={() => setShow(false)}>
+                      POST NEW JOB
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/job/me"} onClick={() => setShow(false)}>
+                      VIEW YOUR JOBS
+                    </Link>
+                  </li>
+                </>
+              ) : null}
+              <button onClick={handleLogout}>LOGOUT</button>
+            </>
+          ) : (
+            <>
+              <li>
+                <Link to={"/login"} onClick={() => setShow(false)}>
+                  LOGIN
+                </Link>
+              </li>
+              <li>
+                <Link to={"/register"} onClick={() => setShow(false)}>
+                  REGISTER
                 </Link>
               </li>
             </>
-          ) : (
-            <></>
           )}
-
-          <button onClick={handleLogout}>LOGOUT</button>
         </ul>
         <div className="hamburger">
           <GiHamburgerMenu onClick={() => setShow(!show)} />
